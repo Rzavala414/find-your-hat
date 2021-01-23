@@ -23,11 +23,29 @@ class Field{
     }
 
     askQuestion(){
-        
+        const direction = prompt('Choose a direction: r= right, l=left d=down u=up: ');
+        switch(direction.toLowerCase()){
+            case 'r':
+                console.log(direction.toLowerCase());
+                break;
+            case 'l':
+                console.log(direction.toLowerCase());
+                break;
+            case 'd':
+                console.log(direction.toLowerCase());
+                break;
+            case 'u':
+                console.log(direction.toLowerCase());
+                break;
+            default:
+                console.log("please enter either R,L,U, or D");
+                this.askQuestion();
+                break;
+        }
     }
 
-    static generateField(){
-        
+    static generateField(height, width){
+
     }
 }
 
@@ -39,3 +57,4 @@ const myField = new Field([
   ]);
 
   myField.print();
+  myField.askQuestion();
