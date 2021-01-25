@@ -15,7 +15,6 @@ class Field{
     }
 
     print(){
-        
         const displayString = this.field.map(row => {
             return row.join('');
         }).join('\n');
@@ -58,3 +57,5 @@ const myField = new Field([
 
   myField.print();
   myField.askQuestion();
+
+//   testing
